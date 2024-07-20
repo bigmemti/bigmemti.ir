@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
 
@@ -13,7 +15,9 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        return view('contact.index', [
+            'contacts' => Contact::all(),
+        ]);
     }
 
     /**
@@ -29,7 +33,11 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
-        //
+        $user = User::firstOrCreate(['phone' => $request->phone], ['name' => $request->name, 'password' => Hash::make('')]);
+
+        $user->contacts()->create(['description' => $request->description]);
+
+        return back()->with('success', __('You contact me successfully.'));
     }
 
     /**
@@ -37,7 +45,9 @@ class ContactController extends Controller
      */
     public function show(Contact $contact)
     {
-        //
+        return view('contact.show', [
+            'contact' => $contact->load(['user']),
+        ]);
     }
 
     /**
@@ -61,6 +71,8 @@ class ContactController extends Controller
      */
     public function destroy(Contact $contact)
     {
-        //
+        $contact->delete();
+
+        return to_route('contact.index');
     }
 }

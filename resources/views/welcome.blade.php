@@ -191,19 +191,28 @@
                             <div class="text-xl font-blod underline">
                                 ##فرم تماس با من
                             </div>
-                            <form class="flex flex-col gap-4" action="">
+                            <form class="flex flex-col gap-4" action="{{ route('contact.store') }}" method="POST">
                                 @csrf
                                 <div class="flex flex-col gap-1">
-                                    <label class="ps-4 font-bold" for="">نام و نام خانوادگی</label>
-                                    <input class="rounded-3xl" type="text">
+                                    <label class="ps-4 font-bold" for="name">نام و نام خانوادگی</label>
+                                    <input class="rounded-3xl" name="name" id="name" type="text" value="{{ old('name') }}">
+                                    @error('name')
+                                        <span class="text-red-700">{{ $message }}</span>
+                                    @enderror
                                 </div>
                                 <div class="flex flex-col gap-1">
-                                    <label class="ps-4 font-bold" for="">شماره‌ی تلفن همراه</label>
-                                    <input class="rounded-3xl" type="text">
+                                    <label class="ps-4 font-bold" for="phone">شماره‌ی تلفن همراه</label>
+                                    <input class="rounded-3xl" name="phone" id="phone" type="text" value="{{ old('phone') }}">
+                                    @error('phone')
+                                        <span class="text-red-700">{{ $message }}</span>
+                                    @enderror
                                 </div>
                                 <div class="flex flex-col gap-1">
-                                    <label class="ps-4 font-bold" for="">توضیحات</label>
-                                    <textarea class="rounded-3xl" name="" id="" cols="30" rows="5"></textarea>
+                                    <label class="ps-4 font-bold" for="description">توضیحات</label>
+                                    <textarea class="rounded-3xl" name="description" id="description" cols="30" rows="5">{{ old('description') }}</textarea>
+                                    @error('description')
+                                        <span class="text-red-700">{{ $message }}</span>
+                                    @enderror
                                 </div>
                                 <button class="text-white font bold text-lg p-4 px-8 bg-blue-700 rounded-lg">ثبت</button>
                             </form>
