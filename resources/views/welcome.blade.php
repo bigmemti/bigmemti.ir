@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Laravel') }} - خدمات طراحی و توسعه وب‌سایت</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,9 +19,11 @@
             #header{
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70)),url("{{ asset('images/header.jpg') }}") no-repeat center center/cover;
             }
+
             #about-me{
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.70)),url("{{ asset('images/aboute-me.jpg') }}") no-repeat center center/cover;
             }
+            
             .bg-glass{
                 background: rgba(240, 240, 240, 0.17);
                 border-radius: 16px;
@@ -30,6 +32,7 @@
                 -webkit-backdrop-filter: blur(8.5px);
                 border: 1px solid rgba(168, 175, 184, 0.26);
             }
+            
             a.active{
                 background-color: rgba(0, 0, 255, 0.45);
                 color : white;
@@ -38,7 +41,7 @@
 
     </head>
     <body>
-        <nav id="nav" class="fixed left-1/2 -translate-x-2/4 top-4 flex justify-center md:justify-between p-4 px-6 container rounded-3xl z-30 bg-white shadow-lg">
+        <nav id="nav" class="island fixed left-1/2 -translate-x-2/4  flex justify-center md:justify-between p-4 px-6 z-30 bg-white shadow-lg transition-all duration-500">
             <div>
                 <a class="p-2 px-4 hover:bg-gray-300 rounded-xl" href="{{ route('home') }}">{{ config('app.name', 'Laravel') }}</a>
             </div>
@@ -56,9 +59,9 @@
         <header id="header" class="pt-3 min-h-screen flex flex-col">
             <div class="container mx-auto px-16 flex flex-col lg:flex-row mt-32 text-white self-stretch justify-around items-center">
                 <div class="flex flex-col max-w-xl  text-sm md:text-base lg:text-lg gap-6">
-                    <h3 class="font-bold text-2xl my-2 underline">
+                    <h1 class="font-bold text-2xl my-2 underline">
                       #   خوش آمدید به وب سایت من!
-                    </h3>
+                    </h1>
                     <p>
                         در دنیای امروز، داشتن یک وب سایت حرفه‌ای و کارآمد از اهمیت ویژه‌ای برخوردار است. من، به عنوان یک توسعه‌دهنده وب سایت، با ارائه خدمات کدنویسی اختصاصی، به شما کمک می‌کنم تا حضور آنلاین منحصر به فرد و قدرتمندی داشته باشید. برخلاف سیستم‌های مدیریت محتوای آماده، وب سایت‌های کدنویسی شده با نیازها و خواسته‌های خاص شما به طور کامل هماهنگ می‌شوند و از انعطاف‌پذیری بیشتری برخوردارند. این وب سایت‌ها با بهینه‌سازی سرعت و امنیت بهتر، تجربه کاربری بهتری را به کاربران ارائه می‌دهند. با من، تفاوت را احساس کنید و وب سایتی منحصر به فرد برای کسب و کار خود داشته باشید.
                     </p>
@@ -67,8 +70,8 @@
                         <a class="p-4 px-6 bg-white text-black rounded-md" href="#contact-me">تماس با من</a>
                     </div>
                 </div>
-                <div>
-                    <dotlottie-player src="https://lottie.host/0d246843-1d83-4a09-bea2-a677ff11ef01/NMDvr6X3xN.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+                <div class="min-w-80 max-w-xl">
+                    <dotlottie-player src="https://lottie.host/0d246843-1d83-4a09-bea2-a677ff11ef01/NMDvr6X3xN.json" background="transparent" speed="1"  loop autoplay></dotlottie-player>
                 </div>
             </div>
         </header>
@@ -77,7 +80,7 @@
                 <div class="min-h-screen flex justify-center items-center p-16">
                     <div class="bg-glass shadow-lg flex flex-col items-center lg:flex-row p-4 rounded-lg gap-12 text-white">
                         <div class="max-w-xl text-sm md:text-base lg:text-lg">
-                            <h3 class="font-bold text-2xl my-2 underline"># حالا من کیم؟</h3>
+                            <h1 class="font-bold text-2xl my-2 underline"># حالا من کیم؟</h1>
                             <p> بیگ‌ممتی برندی بود که با آن در حوزه آموزش حرفه‌ای برنامه‌نویسی و ساخت وب اپلیکیشن‌های پیشرفته برای مجموعه‌های مدیریتی و ساخت نرم‌افزارهای سازمانی فعالیت می‌کردم. اما اکنون چرخ روزگار گونه‌ای چرخید که مرا دوباره به حوزه تولید محصولات کوچکتری مانند وب‌سایت‌های فروشگاهی و وبلاگ‌ها بازگردانده است. </p>
                             <p> بعد از سال‌ها فعالیت در حوزه‌های مختلف، اخیراً تصمیم گرفتم تا مجموعه‌ای از محصولات را برای حل معضلاتی مانند رها شدن وب‌سایت‌های فروشگاهی و آسیب‌های ناشی از آن برای کسب و کارهای کوچک و متوسط ایجاد کنم. این خدمات و محصولات، یقیناً جان تازه‌ای به بازار شما خواهند بخشید و به رشد و توسعه کسب و کار شما کمک خواهند کرد. </p>
                             <p> با من تماس بگیرید و از خدمات من بهره‌مند شوید. </p>
@@ -87,17 +90,17 @@
                             </div>
                         </div>
                         <div class="bg-white p-2 rounded-full">
-                            <img class="rounded-full" src="{{ asset('images/me.png') }}" alt="">
+                            <img class="rounded-full" src="{{ asset('images/me.png') }}" alt="عکس من">
                         </div>
                     </div>
                 </div>
             </section>
             <section id="products">
                 <div class="min-h-screen items-center bg-gray-300 py-16 flex flex-col gap-16  text-sm md:text-base">
-                    <h2 class="text-3xl font-bold underline">#محصولات</h2>
+                    <h1 class="text-3xl font-bold underline">#محصولات</h1>
                     <div class="flex flex-col-reverse lg:flex-row justify-center gap-16 items-center lg:items-start">
                         <div class="flex flex-col max-w-lg gap-4">
-                            <h3 class="text-xl font-bold">##هارو : نسخه‌ی محدود (limited edition) وب‌سایت فروشگاهی</h3>
+                            <h2 class="text-xl font-bold">##هارو : نسخه‌ی محدود (limited edition) وب‌سایت فروشگاهی</h2>
                             <p class="ps-4">هارو یک نرم‌افزار مدیریت محتوا فروشگاهیست که امکانات زیادی را در اختیار شما قرار میدم که بتوانید کسب کار خود را در دنیای مجازی به نمایش عموم بگذارید. این امکانات نظیر:</p>
                             <ul class="list-[square] ps-4">
                                 <li>قابلیت ایجاد، حذف و ویرایش دسته‌بندی، برند و محصول</li>
@@ -117,12 +120,12 @@
                             </div>
                         </div>
                         <div>
-                            <img class="max-w-xl w-96 md:w-auto rounded-2xl" src="{{ asset('images/product-1.png') }}" alt="">
+                            <img class="max-w-xl w-96 md:w-auto rounded-2xl" src="{{ asset('images/product-1.png') }}" alt="محصول هارو نسخه ی محدود">
                         </div>
                     </div>
                     <div class="flex flex-col-reverse lg:flex-row-reverse items-center lg:items-start justify-center gap-16">
                         <div class="flex flex-col max-w-lg gap-4">
-                            <h3 class="text-xl font-bold">##هارو : نسخه‌ی حسابداری (economy edition)  وب‌سایت فروشگاهی و نرمافزار حساب داری تحت وب</h3>
+                            <h2 class="text-xl font-bold">##هارو : نسخه‌ی حسابداری (economy edition)  وب‌سایت فروشگاهی و نرمافزار حساب داری تحت وب</h2>
                             <p class="ps-4">این نسخه نیز مانند نسخه‌ی محدود دارای امکاناتی برای مدیریت محتوای فروشگاهیست با امکاناتی بیشتر و جدید تر. این امکانات جدید نظیر:</p>
                             <ul class="list-[square] ps-4">
                                 <li>امکان ثبت خرید و فروش توسط ادمین</li>
@@ -139,7 +142,7 @@
                             </div>
                         </div>
                         <div>
-                            <img class="max-w-xl w-96 md:w-auto rounded-2xl" src="{{ asset('images/product-2.png') }}" alt="">
+                            <img class="max-w-xl w-96 md:w-auto rounded-2xl" src="{{ asset('images/product-2.png') }}" alt="محصول هارو نسخه ی حسابداری">
                         </div>
                     </div>
                 </div>
@@ -152,45 +155,45 @@
             </section>
             <section id="contact-me">
                 <div class="min-h-screen flex flex-col gap-4 items-center py-16 bg-gray-300">
-                    <h2 class="text-3xl underline font-bold">#تماس با من</h2>
+                    <h1 class="text-3xl underline font-bold">#تماس با من</h1>
                     <p>برای ارتباط با من میتوانید از روش های زیر اقدام نمایید.</p>
                     <div class="flex flex-col lg:flex-row mt-4 lg:mt-32 gap-8 lg:gap-32 lg:items-center">
-                        <div class="max-w-md flex flex-col gap-2 p-24 items-center lg:items-start">
+                        <div class="max-w-md flex flex-col gap-2 p-16 md:p-24  lg:items-start">
                             <div>
                                 <a href="tel:+989052863750" class="flex gap-2 items-center">
-                                    <img class="w-8" src="{{ asset('images/phone.png') }}" alt="">
+                                    <img class="w-8" src="{{ asset('images/phone.png') }}" alt="تلفین">
                                     <p>تلفن : 989052863750+</p>
                                 </a>
                             </div>
                             <div>
                                 <a href="sms:+989052863750" class="flex gap-2 items-center">
-                                    <img class="w-8" src="{{ asset('images/sms.png') }}" alt="">
+                                    <img class="w-8" src="{{ asset('images/sms.png') }}" alt="پیامک">
                                     <p>پیامک : 989052863750+</p>
                                 </a>
                             </div>
                             <div>
                                 <a href="https://telegram.me/bigmemti" class="flex gap-2 items-center">
-                                    <img class="w-8" src="{{ asset('images/telegram.webp') }}" alt="">
+                                    <img class="w-8" src="{{ asset('images/telegram.webp') }}" alt="تلگرام">
                                     <p>تلگرام : bigmemti@</p>
                                 </a>
                             </div>
                             <div>
                                 <a href="https://wa.me/+989052863750" class="flex gap-2 items-center">
-                                    <img class="w-8" src="{{ asset('images/whatsapp.png') }}" alt="">
+                                    <img class="w-8" src="{{ asset('images/whatsapp.png') }}" alt="واتساپ">
                                     <p>واتساپ : 989052863750+</p>
                                 </a>
                             </div>
                             <div>
                                 <a href="https://www.instagram.com/bigmemti" class="flex gap-2 items-center">
-                                    <img class="w-8" src="{{ asset('images/instagram.png') }}" alt="">
+                                    <img class="w-8" src="{{ asset('images/instagram.png') }}" alt="اینستاگرام">
                                     <p>اینستاگرام : bigmemti@</p>
                                 </a>
                             </div>
                         </div>
                         <div class="flex flex-col gap-4 items-center p-8 rounded-md">
-                            <div class="text-xl font-blod underline">
+                            <h2 class="text-xl font-blod underline">
                                 ##فرم تماس با من
-                            </div>
+                            </h2>
                             <form class="flex flex-col gap-4" action="{{ route('contact.store') }}" method="POST">
                                 @csrf
                                 <div class="flex flex-col gap-1">
@@ -226,39 +229,52 @@
             <a href="https://github.com/bigmemti" target="_blank" class="mx-2 hover:text-blue-700">bigmemti</a>
         </footer>
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const links = document.querySelectorAll('a[href^="#"]');
-                for (const link of links) {
-                    link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
+            document.addEventListener("DOMContentLoaded", () => {
+                const nav = document.querySelector("nav");
+                const links = document.querySelectorAll("a[href^='#']");
+                const offsetHeight = nav ? nav.offsetHeight : 0;
+
+                const smoothScroll = (event) => {
+                    event.preventDefault();
+                    const targetId = event.currentTarget.getAttribute("href").substring(1);
                     const targetElement = document.getElementById(targetId);
 
                     if (targetElement) {
                         window.scrollTo({
-                        top: targetElement.offsetTop - document.querySelector('nav').offsetHeight,
-                        behavior: 'smooth'
+                            top: targetElement.offsetTop - offsetHeight,
+                            behavior: "smooth",
                         });
                     }
+                };
+
+                const updateActiveLink = () => {
+                    let current = "#header";
+
+                    document.querySelectorAll("section, header").forEach((section) => {
+                        const sectionTop = section.offsetTop - offsetHeight;
+                        if (window.scrollY >= sectionTop) {
+                            current = section.getAttribute("id");
+                        }
                     });
+
+                    links.forEach((link) => {
+                        link.classList.toggle("active", link.getAttribute("href").substring(1) === current);
+                    });
+                };
+
+                const updateNavigation = () => {
+                    if (window.scrollY >= (window.innerHeight / 8)) {
+                        nav.classList.remove("island");
+                        nav.classList.add("full");
+                    }else{
+                        nav.classList.remove("full");
+                        nav.classList.add("island");
+                    }
                 }
-                window.addEventListener('scroll', function() {
-                    let current = '#header';
 
-                    document.querySelectorAll('section, header').forEach(section => {
-                    const sectionTop = section.offsetTop - document.querySelector('nav').offsetHeight;
-                    if (scrollY >= sectionTop) {
-                        current = section.getAttribute('id');
-                    }
-                    });
-
-                    links.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').substring(1) === current) {
-                        link.classList.add('active');
-                    }
-                    });
-                });
+                links.forEach((link) => link.addEventListener("click", smoothScroll));
+                window.addEventListener("scroll", updateActiveLink);
+                window.addEventListener("scroll", updateNavigation);
             });
         </script>
     </body>
