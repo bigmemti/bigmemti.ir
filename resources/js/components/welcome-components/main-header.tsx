@@ -2,9 +2,9 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function MainHeader() {
     return (
-        <header id="header" className="pt-3 min-h-screen flex flex-col">
-            <div className="container mx-auto px-16 flex flex-col xl:flex-row mt-32 text-white self-stretch justify-around items-center">
-                <div className="flex flex-col max-w-xl text-sm md:text-base lg:text-lg gap-6">
+        <header id="header" className="min-h-screen grid place-items-center">
+            <div className="container mx-auto px-16 grid grid-cols-1 xl:grid-cols-[1fr_1.75fr]  items-center justify-center text-white mt-4 lg:my-24 xl:my-0">
+                <div className="flex flex-col text-sm md:text-base lg:text-lg gap-6">
                     <h1 className="font-bold text-2xl my-2 underline">
                       #   خوش آمدید به وب سایت من!
                     </h1>
