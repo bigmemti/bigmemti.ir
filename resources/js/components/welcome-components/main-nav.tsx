@@ -12,7 +12,7 @@ export default function MainNav() {
         const links = Array.from(document.querySelectorAll("a[href^='#']")) as HTMLAnchorElement[];
         const sections = links.map(link => document.getElementById(link.getAttribute("href")!.substring(1)));
 
-        const updateNavigation = () => setNavClass(prev => (window.scrollY >= window.innerHeight / 8 ? "w-full py-6" : "container rounded-3xl top-4"));
+        const updateNavigation = () => setNavClass(() => (window.scrollY >= window.innerHeight / 8 ? "w-full py-6" : "container rounded-3xl top-4"));
 
         const smoothScroll = (event :  React.MouseEvent<HTMLAnchorElement>) => {
             event.preventDefault();
@@ -28,7 +28,7 @@ export default function MainNav() {
         };
 
         const updateActiveLink = () => {
-            let scrollPosition = window.scrollY + offsetHeight + 50;
+            const scrollPosition = window.scrollY + offsetHeight + 50;
             let currentActive = "";
 
             sections.forEach(section => {
