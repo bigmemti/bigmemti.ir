@@ -4,6 +4,7 @@ import MainNav from '@/components/welcome-components/main-nav';
 import Products from '@/components/welcome-components/products';
 import { Head } from '@inertiajs/react';
 import ContactMe from '@/components/welcome-components/contact-me';
+import FAQ from '@/components/welcome-components/faq';
 export default function Welcome() {
 
     return (
@@ -35,7 +36,7 @@ export default function Welcome() {
                 <AboutMe />
                 <Products/>
                 <section id="gallery"></section> 
-                <section id="faq" ></section>
+                <FAQ/>
                 <ContactMe/>
             </main>
             <footer className="bg-gray-800 text-gray-200 p-6 flex justify-center">
