@@ -41,30 +41,20 @@ export default function ContactMe(){
                             <h2 className="text-xl font-blod underline">
                                 ##فرم تماس با من
                             </h2>
-                            <form className="flex flex-col gap-4" action="{{ route('contact.store') }}" method="POST">
-                                {/* @csrf */}
+                            <form className="flex flex-col gap-4" action="#">
                                 <div className="flex flex-col gap-1">
                                     <label className="ps-4 font-bold" htmlFor="name">نام و نام خانوادگی</label>
-                                    <input className="rounded-3xl" name="name" id="name" type="text" />
-                                    {/* @error('name')
-                                        <span className="text-red-700"></span>
-                                    @enderror */}
+                                    <input className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="name" id="name" type="text" />
                                 </div>
                                 <div className="flex flex-col gap-1">
                                     <label className="ps-4 font-bold" htmlFor="phone">شماره‌ی تلفن همراه</label>
-                                    <input className="rounded-3xl" name="phone" id="phone" type="text" />
-                                    {/* @error('phone')
-                                        <span className="text-red-700"></span>
-                                    @enderror */}
+                                    <input className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="phone" id="phone" type="text" />
                                 </div>
                                 <div className="flex flex-col gap-1">
                                     <label className="ps-4 font-bold" htmlFor="description">توضیحات</label>
-                                    <textarea className="rounded-3xl" name="description" id="description"/>
-                                    {/* @error('description')
-                                        <span className="text-red-700"></span>
-                                    @enderror */}
+                                    <textarea className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="description" id="description"/>
                                 </div>
-                                <button className="text-white font bold text-lg p-4 px-8 bg-blue-700 rounded-lg">ثبت</button>
+                                <button className="text-white font bold text-lg p-4 px-8 bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800">ثبت</button>
                             </form>
                         </div>
                     </div>
