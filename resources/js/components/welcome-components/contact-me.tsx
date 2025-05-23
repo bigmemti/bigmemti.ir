@@ -28,32 +28,44 @@ export default function ContactMe(){
                         <div className="max-w-md flex flex-col gap-2 p-16 md:p-24  lg:items-start">
                             <div>
                                 <a href="tel:+989052863750" className="flex gap-2 items-center">
-                                    <img className="w-8" src="/images/phone.png" alt="تلفین"/>
+                                    <img className="w-8 aspect-square" src="/images/phone.png" alt="تلفن"/>
                                     <p>تلفن : 989052863750+</p>
                                 </a>
                             </div>
                             <div>
                                 <a href="sms:+989052863750" className="flex gap-2 items-center">
-                                    <img className="w-8" src="/images/sms.png" alt="پیامک"/>
+                                    <img className="w-8 aspect-square" src="/images/sms.png" alt="پیامک"/>
                                     <p>پیامک : 989052863750+</p>
                                 </a>
                             </div>
                             <div>
-                                <a href="https://telegram.me/bigmemti" className="flex gap-2 items-center">
-                                    <img className="w-8" src="/images/telegram.webp" alt="تلگرام"/>
+                                <a href="https://telegram.me/bigmemti" className="flex gap-2 items-center" target="_blank">
+                                    <img className="w-8 aspect-square" src="/images/telegram.webp" alt="تلگرام"/>
                                     <p>تلگرام : bigmemti@</p>
                                 </a>
                             </div>
                             <div>
-                                <a href="https://wa.me/+989052863750" className="flex gap-2 items-center">
-                                    <img className="w-8" src="/images/whatsapp.png" alt="واتساپ"/>
+                                <a href="https://wa.me/+989052863750" className="flex gap-2 items-center" target="_blank">
+                                    <img className="w-8 aspect-square" src="/images/whatsapp.png" alt="واتساپ"/>
                                     <p>واتساپ : 989052863750+</p>
                                 </a>
                             </div>
                             <div>
-                                <a href="https://www.instagram.com/bigmemti" className="flex gap-2 items-center">
-                                    <img className="w-8" src="/images/instagram.png" alt="اینستاگرام"/>
+                                <a href="https://www.instagram.com/bigmemti" className="flex gap-2 items-center" target="_blank">
+                                    <img className="w-8 aspect-square" src="/images/instagram.png" alt="اینستاگرام"/>
                                     <p>اینستاگرام : bigmemti@</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://x.com/bigmemti" className="flex gap-2 items-center" target="_blank">
+                                    <img className="w-8 aspect-square" src="/images/x.webp" alt="ایکس"/>
+                                    <p>ایکس : bigmemti@</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/mahdi-zangeneh-1bb34a351" className="flex gap-2 items-center" target="_blank">
+                                    <img className="w-8 aspect-square" src="/images/linkedin.png" alt="لینکدین"/>
+                                    <p>لینکدین : mahdi zangeneh</p>
                                 </a>
                             </div>
                         </div>
