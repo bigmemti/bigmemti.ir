@@ -1,4 +1,24 @@
+import { useForm } from "@inertiajs/react"
+
 export default function ContactMe(){
+    const { data, setData, post, processing, errors } = useForm({
+        name: '',
+        phone: '',
+        message: '',
+    });
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        post(route('contact.store'), {
+            preserveScroll: true,
+        });
+        setData({
+            name: '',
+            phone: '',
+            message: '',
+        });
+    };
+    
     return(
         <section id="contact-me">
                 <div className="min-h-screen flex flex-col gap-4 items-center py-16 bg-gray-300 dark:bg-gray-700">
@@ -41,20 +61,23 @@ export default function ContactMe(){
                             <h2 className="text-xl font-blod underline">
                                 ##فرم تماس با من
                             </h2>
-                            <form className="flex flex-col gap-4" action="#">
+                            <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                                 <div className="flex flex-col gap-1">
                                     <label className="ps-4 font-bold" htmlFor="name">نام و نام خانوادگی</label>
-                                    <input className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="name" id="name" type="text" />
+                                    <input className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="name" id="name" type="text" value={data.name} onChange={(e) => setData('name', e.target.value)} />
+                                    {errors.name && <p className="text-red-500">{errors.name}</p>}
                                 </div>
                                 <div className="flex flex-col gap-1">
                                     <label className="ps-4 font-bold" htmlFor="phone">شماره‌ی تلفن همراه</label>
-                                    <input className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="phone" id="phone" type="text" />
+                                    <input className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="phone" id="phone" type="text" value={data.phone} onChange={(e) => setData('phone', e.target.value)} />
+                                    {errors.phone && <p className="text-red-500">{errors.phone}</p>}
                                 </div>
                                 <div className="flex flex-col gap-1">
                                     <label className="ps-4 font-bold" htmlFor="description">توضیحات</label>
-                                    <textarea className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="description" id="description"/>
+                                    <textarea className="rounded-3xl bg-gray-200 dark:bg-gray-800 p-2" name="description" id="description" value={data.message} onChange={(e) => setData('message', e.target.value)}/>
+                                    {errors.message && <p className="text-red-500">{errors.message}</p>}
                                 </div>
-                                <button className="text-white font bold text-lg p-4 px-8 bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800">ثبت</button>
+                                <button className="text-white font bold text-lg p-4 px-8 bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800" type="submit" disabled={processing}>{processing ? 'در حال ارسال...' : 'ثبت'}</button>
                             </form>
                         </div>
                     </div>

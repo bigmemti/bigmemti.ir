@@ -3,7 +3,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 export default function MainHeader() {
     return (
         <header id="header" className="min-h-screen grid place-items-center">
-            <div className="container mx-auto px-16 grid grid-cols-1 xl:grid-cols-[1fr_1.75fr]  items-center justify-center text-white mt-4 lg:my-24 xl:my-0">
+            <div className="container mx-auto px-16 grid grid-cols-1 xl:grid-cols-2 h-full items-center justify-center text-white mt-4 lg:my-24 xl:my-0">
                 <div className="flex flex-col text-sm md:text-base lg:text-lg gap-6">
                     <h1 className="font-bold text-2xl my-2 underline">
                       #   خوش آمدید به وب سایت من!
@@ -16,7 +16,7 @@ export default function MainHeader() {
                         <a className="p-4 px-6 bg-white text-black rounded-md" href="#contact-me">تماس با من</a>
                     </div>
                 </div>
-                <DotLottieReact src="https://lottie.host/0d246843-1d83-4a09-bea2-a677ff11ef01/NMDvr6X3xN.json" loop autoplay/>
+                <DotLottieReact className='aspect-[1.75]' src="https://lottie.host/0d246843-1d83-4a09-bea2-a677ff11ef01/NMDvr6X3xN.json" loop autoplay/>
             </div>
         </header>
     )

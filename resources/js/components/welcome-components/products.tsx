@@ -5,8 +5,8 @@ export default function Products(){
                 <h1 className="text-3xl font-bold underline">#محصولات</h1>
                 <div className="flex flex-col-reverse lg:flex-row justify-center gap-16 items-center lg:items-start">
                     <div className="flex flex-col max-w-lg gap-4">
-                        <h2 className="text-xl font-bold ps-2">##هارو : نسخه‌ی محدود (limited edition) وب‌سایت فروشگاهی</h2>
-                        <p className="ps-6">هارو یک نرم‌افزار مدیریت محتوا فروشگاهیست که امکانات زیادی را در اختیار شما قرار میدم که بتوانید کسب کار خود را در دنیای مجازی به نمایش عموم بگذارید. این امکانات نظیر:</p>
+                        <h2 className="text-xl font-bold ps-2">## نسخه‌ی محدود (limited edition) وب‌سایت فروشگاهی</h2>
+                        <p className="ps-6">یک نرم‌افزار مدیریت محتوا فروشگاهیست که امکانات زیادی را در اختیار شما قرار میدم که بتوانید کسب کار خود را در دنیای مجازی به نمایش عموم بگذارید. این امکانات نظیر:</p>
                         <ul className="list-[square] ps-6">
                             <li>قابلیت ایجاد، حذف و ویرایش دسته‌بندی، برند و محصول</li>
                             <li>قابلیت دسته‌بندی به صورت مراتبی</li>
@@ -30,7 +30,7 @@ export default function Products(){
                 </div>
                 <div className="flex flex-col-reverse lg:flex-row-reverse items-center lg:items-start justify-center gap-16">
                     <div className="flex flex-col max-w-lg gap-4">
-                        <h2 className="text-xl font-bold ps-2">##هارو : نسخه‌ی حسابداری (economy edition)  وب‌سایت فروشگاهی و نرمافزار حساب داری تحت وب</h2>
+                        <h2 className="text-xl font-bold ps-2">## نسخه‌ی حسابداری (economy edition)  وب‌سایت فروشگاهی و نرمافزار حساب داری تحت وب</h2>
                         <p className="ps-6">این نسخه نیز مانند نسخه‌ی محدود دارای امکاناتی برای مدیریت محتوای فروشگاهیست با امکاناتی بیشتر و جدید تر. این امکانات جدید نظیر:</p>
                         <ul className="list-[square] ps-6">
                             <li>امکان ثبت خرید و فروش توسط ادمین</li>
